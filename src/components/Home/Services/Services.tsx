@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <section className="py-20 relative">
+    <section id="services" className="py-20 relative">
       {/* Side image pattern */}
       <Image
         src={"/images/service_bg.png"}
@@ -21,16 +21,28 @@ const Services = () => {
           Story with passion
         </h1>
         <div className="grid mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 items-center">
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="0">
             <ServiceCard image="/images/s1.png" icon="/images/sicon1.png" />
           </div>
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="100">
             <ServiceCard image="/images/s2.png" icon="/images/sicon2.png" />
           </div>
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="200">
             <ServiceCard image="/images/s3.png" icon="/images/sicon3.png" />
           </div>
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="300">
             <ServiceCard image="/images/s4.png" icon="/images/sicon4.png" />
           </div>
         </div>

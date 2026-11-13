@@ -14,7 +14,7 @@ const PROJECT_IMAGES = [
 
 const Project = () => {
   return (
-    <section className="py-16 bg-black">
+    <section id="portfolio" className="py-16 bg-black">
       <h2 className="text-[#b69974] text-lg text-center font-medium tracking-widest">
         Portfolio
       </h2>
@@ -24,7 +24,11 @@ const Project = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-20 w-[80%] mx-auto gap-6">
         {PROJECT_IMAGES.map((src, index) => (
-          <div key={index}>
+          <div 
+          data-aos="zoom-in"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay={index * 100}
+          key={index}>
             <Tilt>
                 <Image
                 src={src}

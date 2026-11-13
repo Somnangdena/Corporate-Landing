@@ -18,9 +18,12 @@ const AboutProgress = () => {
   ];
   return (
     <div className="space-y-8 py-6 md:py-10">
-      {data.map((item) => (
+      {data.map((item, idx) => (
         <div
           key={item.id}
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay={450 + (idx + 1) * 150}
           className="flex items-center gap-6 bg-white rounded-xl shadow-md p-6">
           {/* Icons */}
           <div className="bg-[#b58b58] p-5 rounded-md flex items-center justify-center">

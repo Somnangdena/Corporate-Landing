@@ -3,10 +3,13 @@ import AboutProgress from "./AboutProgress";
 
 const About = () => {
   return (
-    <section className="py-16 bg-white">
+    <section id="about" className="py-16 bg-white">
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Image content */}
-        <div className="relative flex justify-center items-center">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-center"
+          className="relative flex justify-center items-center">
           {/* Main Image */}
 
           <Image
@@ -28,17 +31,33 @@ const About = () => {
         {/* Text content */}
         <div className="text-black">
           {/* subheading */}
-          <h1 className="text-blue-700 text-lg font-medium tracking-widest">About Us</h1>
+          <h1
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="150"
+            className="text-blue-700 text-lg font-medium tracking-widest">
+            About Us
+          </h1>
           {/* Main heading */}
-          <h1 className="text-3xl md:text-5xl font-bold mt-4">Innovative solutions for digital success</h1>
+          <h1
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="300"
+            className="text-3xl md:text-5xl font-bold mt-4">
+            Innovative solutions for digital success
+          </h1>
           {/* description */}
-          <p className="ml-0 md:ml-12 md:mt-10 mt-5 text-black text-sm md:text-base font-semibold leading-loose">
+          <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-delay="450"
+            className="ml-0 md:ml-12 md:mt-10 mt-5 text-black text-sm md:text-base font-semibold leading-loose">
             Payment solutions enable businesses to accept payments Payments
             solutions enable businesses to accept payments from customers
             conveniently from customers conveniently and securely.
           </p>
           {/* Progress content */}
-          <AboutProgress/>
+          <AboutProgress />
         </div>
       </div>
     </section>

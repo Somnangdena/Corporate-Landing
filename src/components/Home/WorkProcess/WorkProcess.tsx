@@ -2,7 +2,7 @@ import WorkProcessCard from "./WorkProcessCard";
 
 const WorkProcess = () => {
   return (
-    <section className="pt-24 pb-24 bg-white">
+    <section id="work" className="pt-24 pb-24 bg-white">
       <h1 className="text-[#b69974] text-lg text-center font-medium tracking-widest">
         Work Process
       </h1>
